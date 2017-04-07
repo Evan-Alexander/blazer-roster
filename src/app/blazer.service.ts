@@ -22,4 +22,13 @@ export class BlazerService {
   getBlazerById(blazerId: string){
     return this.angularFire.database.object('blazers/', + blazerId);
   }
+
+  updateBlazer(localUpdatedBlazer){
+   var blazerEntryInFirebase = this.getBlazerById(localUpdatedBlazer.$key);
+   blazerEntryInFirebase.update({name: localUpdatedBlazer.name,
+                               position: localUpdatedBlazer.position,
+                               height: localUpdatedBlazer.height,
+                               description: localUpdatedBlazer.description});
+  }
+
 }
