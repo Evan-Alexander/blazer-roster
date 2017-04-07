@@ -3,6 +3,7 @@ import { Blazer } from '../blazer.model';
 import { Router } from '@angular/router';
 import { BlazerService } from '../blazer.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -27,6 +28,12 @@ export class HomeComponent implements OnInit {
   goToDetailPage(clickedBlazer) {
     this.router.navigate(['blazer', clickedBlazer.$key]);
     console.log(clickedBlazer);
+  }
+
+  positionFilter: string = "allBlazers";
+
+  onChange(optionFromMenu) {
+    this.positionFilter = optionFromMenu;
   }
 
 }

@@ -1,11 +1,20 @@
 <h2>Welcome to the Portland TrailBlazers</h2>
 
-<!-- <h4>Search by position:</h4> -->
+<h4>Search by position:</h4>
+<select id="filter" (change)="onChange($event.target.value)">
+  <option value="allBlazers" selected="selected">All Blazers</option>
+  <option value="shootingGuard">Shooting Guard</option>
+  <option value="pointGuard">Point Guard</option>
+  <option value="smallForward">Small Forward</option>
+  <option value="powerForward">Power Forward</option>
+  <option value="center">Center</option>
+
+</select>
 
 <h3>Click on a player to view their profile.</h3>
 
 
-<div id="blazer-list-home" *ngFor="let blazer of blazers">
+<div id="blazer-list-home" *ngFor="let blazer of blazers | filter:positionFilter">
 
       <h3 (click)="goToDetailPage(blazer)">{{blazer?.name}}</h3>
 

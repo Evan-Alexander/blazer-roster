@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { BlazerDetailComponent } from './blazer-detail/blazer-detail.component';
 import { ManagerComponent } from './manager/manager.component';
 import { EditBlazerComponent } from './edit-blazer/edit-blazer.component';
+import { FilterPipe } from './filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     AboutComponent,
     BlazerDetailComponent,
     ManagerComponent,
-    EditBlazerComponent
+    EditBlazerComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

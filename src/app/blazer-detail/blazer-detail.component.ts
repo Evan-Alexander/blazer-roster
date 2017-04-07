@@ -32,16 +32,4 @@ export class BlazerDetailComponent implements OnInit {
      console.log(this.blazerToDisplay);
    })
   }
-  // ngOnInit() {
-  //   this.route.params.forEach((urlParametersArray) => {
-  //     this.blazerId = urlParametersArray['id'];
-  //   });
-  //   this.blazerService.getBlazerById(this.blazerId).subscribe(dataLastEmittedFromObserver => {
-  //     this.blazerToDisplay = new Blazer(dataLastEmittedFromObserver.name,
-  //                                       dataLastEmittedFromObserver.position,
-  //                                       dataLastEmittedFromObserver.height,
-  //                                       dataLastEmittedFromObserver.description);
-  //   })
-  //   console.log(this.blazerToDisplay);
-  // }
 }
