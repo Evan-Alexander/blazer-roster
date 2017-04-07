@@ -2,21 +2,29 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Blazer } from '../blazer.model';
+import { BlazerService } from '../blazer.service';
 
 @Component({
   selector: 'app-blazer-detail',
   templateUrl: './blazer-detail.component.html',
-  styleUrls: ['./blazer-detail.component.css']
+  styleUrls: ['./blazer-detail.component.css'],
+  providers: [BlazerService]
 })
 export class BlazerDetailComponent implements OnInit {
   blazerId: number = null;
+  blazerToDisplay: Blazer;
 
-  constructor(private route: ActivatedRoute, private localtion: Location) { }
+  constructor(
+    private route: ActivatedRoute,
+    private localtion: Location,
+    private blazerService: BlazerService
+    ) { }
 
   ngOnInit() {
-    this.route.params.forEach((ulrParameters) => {
-      this.albumId = parseInt(urlParameters['id']);
+    this.route.params.forEach((urlParameters) => {
+      this.blazerId = parseInt(urlParameters['id']);
     });
+    this.blazerToDisplay = this.blazerService.getBlazerById(this.blazerId);
   }
 
 }
