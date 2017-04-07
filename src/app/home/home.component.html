@@ -3,3 +3,9 @@
 <h4>Click on a player to view their profile.</h4>
 
 <h4>Search by position:</h4>
+
+<div *ngFor="let blazer of blazers"  class="well">
+
+    <h3 (click)="goToDetailPage(blazer)">{{blazer.name}}</h3>
+
+</div>
