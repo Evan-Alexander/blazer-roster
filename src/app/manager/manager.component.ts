@@ -22,6 +22,7 @@ export class ManagerComponent implements OnInit {
     } else {
       var newBlazer: Blazer = new Blazer(name, position, height, description);
       this.blazerService.addBlazer(newBlazer);
+      alert("Entry Submitted!");
     }
   }
 }

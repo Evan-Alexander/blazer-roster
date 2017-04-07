@@ -16,25 +16,23 @@
     "height": "6-9",
     "description": "Awarded most improved player in the NBA is second season.  A shot creator and unbelievable ball handling skills.",
     "id": "3"
-  },{
+    },{
     "name": "Al Farouk Aminu",
     "position": "Power Forward",
     "height": "6-9",
     "description": "Please dont take the ball up court.  Great defense and atheltic abilities.",
     "id": "4"
-    },
-  {
+    },{
     "name": "Jusuf Nurkic",
     "position": "Center",
     "height": "6-11",
     "description": "His second season in the NBA is looking to have some serious all-star potential.  The Blazers are an entirely different team with him on the court.",
     "id": "5"
-    },
-  {
+    },{
     "name": "Allen Crabbe",
     "position": "Point Guard",
     "height": "6-6",
     "description": "Knocks the light out of three-point shots.  Great sixth-man.",
     "id": "6"
-    }]
+  }]
 }

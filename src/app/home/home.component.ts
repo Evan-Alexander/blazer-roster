@@ -12,13 +12,16 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 
 export class HomeComponent implements OnInit {
-  blazers: FirebaseListObservable<any[]>;
+  blazers;
   currentRoute: string = this.router.url;
 
   constructor(private router: Router, private blazerService: BlazerService) { }
 
   ngOnInit() {
-    this.blazers = this.blazerService.getBlazers();
+    this.blazerService.getBlazers().subscribe(dataLastEmittedFromObserver => {
+      this.blazers = dataLastEmittedFromObserver;
+      console.log(this.blazers);
+    })
   }
 
   goToDetailPage(clickedBlazer) {

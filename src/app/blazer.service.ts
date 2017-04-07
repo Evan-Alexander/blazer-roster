@@ -9,7 +9,7 @@ export class BlazerService {
 
   constructor(private angularFire: AngularFire) {
     this.blazers = angularFire.database.list('blazers');
- }
+  }
 
   getBlazers() {
     return this.blazers;
@@ -29,6 +29,11 @@ export class BlazerService {
                                position: localUpdatedBlazer.position,
                                height: localUpdatedBlazer.height,
                                description: localUpdatedBlazer.description});
+  }
+
+  deleteBlazer(localBlazerToDelete) {
+    var blazerEntryInFirebase = this.getBlazerById(localBlazerToDelete.$key);
+    blazerEntryInFirebase.remove();
   }
 
 }

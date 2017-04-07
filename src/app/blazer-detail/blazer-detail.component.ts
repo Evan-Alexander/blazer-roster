@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2';
 })
 export class BlazerDetailComponent implements OnInit {
   blazerId: string;
-  blazerToDisplay;
+  blazerToDisplay: Blazer;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,11 +23,15 @@ export class BlazerDetailComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.blazerId = urlParameters['id'];
+    this.route.params.forEach((urlParametersArray) => {
+      this.blazerId = urlParametersArray['id'];
     });
-    this.blazerToDisplay = this.blazerService.getBlazerById(this.blazerId);
+    this.blazerService.getBlazerById(this.blazerId).subscribe(dataLastEmittedFromObserver => {
+      this.blazerToDisplay = new Blazer(dataLastEmittedFromObserver.name,
+                                        dataLastEmittedFromObserver.position,
+                                        dataLastEmittedFromObserver.height,
+                                        dataLastEmittedFromObserver.description);
+    })
     console.log(this.blazerToDisplay);
   }
-
 }

@@ -20,4 +20,10 @@ export class EditBlazerComponent implements OnInit {
     this.blazerService.updateBlazer(blazerToUpdate);
   }
 
+  beginDeletingBlazer(blazerToDelete) {
+    if(confirm("Are you sure you want to delete this player from the roster?")) {
+      this.blazerService.deleteBlazer(blazerToDelete);
+    }
+  }
+
 }

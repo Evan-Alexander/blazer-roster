@@ -2,16 +2,17 @@
 
 <!-- <h4>Search by position:</h4> -->
 
-<h4>Click on a player to view their profile.</h4>
+<h3>Click on a player to view their profile.</h3>
 
 
-<div *ngFor="let blazer of blazers | async"  class="well">
+<div id="blazer-list-home" *ngFor="let blazer of blazers">
 
-    <h3 (click)="goToDetailPage(blazer)">{{blazer.name}}</h3>
+      <h3 (click)="goToDetailPage(blazer)">{{blazer?.name}}</h3>
+
     <div *ngIf="currentRoute === '/manager'">
-      <h4>{{blazer.position}}</h4>
-      <h4>{{blazer.heigth}}</h4>
-      <h5>{{blazer.description}}</h5>
+      <h4>{{blazer?.position}}</h4>
+      <h4>{{blazer?.heigth}}</h4>
+      <h5>{{blazer?.description}}</h5>
 
       <hr>
       <app-edit-blazer [selectedBlazer]="blazer"></app-edit-blazer>
