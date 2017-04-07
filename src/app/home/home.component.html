@@ -4,7 +4,7 @@
 
 <h4>Search by position:</h4>
 
-<div *ngFor="let blazer of blazers"  class="well">
+<div *ngFor="let blazer of blazers | async"  class="well">
 
     <h3 (click)="goToDetailPage(blazer)">{{blazer.name}}</h3>
 

@@ -16,6 +16,10 @@ const appRoutes: Routes = [
   {
     path: 'blazers/:id',
     component: BlazerDetailComponent
+  },
+  {
+    path: 'manager',
+    component: ManagerComponent
   }
  ];
 

@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlazerDetailComponent } from './blazer-detail/blazer-detail.component';
+import { ManagerComponent } from './manager/manager.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +25,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     AboutComponent,
-    BlazerDetailComponent
+    BlazerDetailComponent,
+    ManagerComponent
   ],
   imports: [
     BrowserModule,
