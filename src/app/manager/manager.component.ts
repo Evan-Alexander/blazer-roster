@@ -17,8 +17,11 @@ export class ManagerComponent implements OnInit {
   }
 
   submitForm(name: string, position: string, height: string, description: string) {
-    var newBlazer: Blazer = new Blazer(name, position, height, description);
-    this.blazerService.addBlazer(newBlazer);
+    if (!name || !position || !height || !description) {
+      alert("Please fill in all fields and resubmit.");
+    } else {
+      var newBlazer: Blazer = new Blazer(name, position, height, description);
+      this.blazerService.addBlazer(newBlazer);
+    }
   }
-
 }
