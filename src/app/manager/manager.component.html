@@ -1,0 +1,27 @@
+<h3>Add A New Player to the team:</h3>
+<div id="add-new-form" class="form-group">
+  <div>
+    <label>Player Name:</label>
+    <br>
+    <input class="form-control" #newName>
+  </div>
+
+  <div>
+    <label>Player Position:</label>
+    <br>
+    <input class="form-control" #newPosition>
+  </div>
+
+  <div>
+    <label>Player Height:</label>
+    <br>
+    <input class="form-control" #newHeight>
+  </div>
+  <div>
+    <label>Player Description:</label>
+    <br>
+    <input class="form-control" #newDescription>
+  </div>
+  <br>
+  <button (click)="submitForm(newName.value, newPosition.value, newHeight.value, newDescription.value); newName.value=''; newPosition.value=''; newHeight.value=''; newDescription.value=''">Add</button>
+</div>
