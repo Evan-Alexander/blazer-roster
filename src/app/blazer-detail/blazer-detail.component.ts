@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Blazer } from '../blazer.model';
 import { BlazerService } from '../blazer.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { FirebaseObjectObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-blazer-detail',
@@ -11,7 +13,7 @@ import { BlazerService } from '../blazer.service';
   providers: [BlazerService]
 })
 export class BlazerDetailComponent implements OnInit {
-  blazerId: number = null;
+  blazerId: string;
   blazerToDisplay: Blazer;
 
   constructor(
@@ -22,7 +24,7 @@ export class BlazerDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.blazerId = parseInt(urlParameters['id']);
+      this.blazerId = urlParameters['id'];
     });
     this.blazerToDisplay = this.blazerService.getBlazerById(this.blazerId);
   }
