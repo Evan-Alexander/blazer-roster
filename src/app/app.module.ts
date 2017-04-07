@@ -7,12 +7,14 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { BlazerDetailComponent } from './blazer-detail/blazer-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BlazerDetailComponent
   ],
   imports: [
     BrowserModule,
