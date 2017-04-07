@@ -12,7 +12,8 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 
 export class HomeComponent implements OnInit {
-  blazers: FirebaseListObservable<any[]>;;
+  blazers: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private blazerService: BlazerService) { }
 
