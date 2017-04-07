@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2';
 })
 export class BlazerDetailComponent implements OnInit {
   blazerId: string;
-  blazerToDisplay: Blazer;
+  blazerToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,14 +24,24 @@ export class BlazerDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParametersArray) => {
-      this.blazerId = urlParametersArray['id'];
-    });
-    this.blazerService.getBlazerById(this.blazerId).subscribe(dataLastEmittedFromObserver => {
-      this.blazerToDisplay = new Blazer(dataLastEmittedFromObserver.name,
-                                        dataLastEmittedFromObserver.position,
-                                        dataLastEmittedFromObserver.height,
-                                        dataLastEmittedFromObserver.description);
-    })
-    console.log(this.blazerToDisplay);
+     this.blazerId = urlParametersArray['id'];
+   });
+   this.blazerService.getBlazerById(this.blazerId).subscribe(dataLastEmittedFromObserver => {
+     this.blazerToDisplay = dataLastEmittedFromObserver;
+
+     console.log(this.blazerToDisplay);
+   })
   }
+  // ngOnInit() {
+  //   this.route.params.forEach((urlParametersArray) => {
+  //     this.blazerId = urlParametersArray['id'];
+  //   });
+  //   this.blazerService.getBlazerById(this.blazerId).subscribe(dataLastEmittedFromObserver => {
+  //     this.blazerToDisplay = new Blazer(dataLastEmittedFromObserver.name,
+  //                                       dataLastEmittedFromObserver.position,
+  //                                       dataLastEmittedFromObserver.height,
+  //                                       dataLastEmittedFromObserver.description);
+  //   })
+  //   console.log(this.blazerToDisplay);
+  // }
 }

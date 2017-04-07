@@ -18,12 +18,14 @@ export class EditBlazerComponent implements OnInit {
 
   beginUpdatingBlazer(blazerToUpdate) {
     this.blazerService.updateBlazer(blazerToUpdate);
+    console.log(blazerToUpdate);
   }
 
   beginDeletingBlazer(blazerToDelete) {
     if(confirm("Are you sure you want to delete this player from the roster?")) {
       this.blazerService.deleteBlazer(blazerToDelete);
     }
+    console.log(blazerToDelete);
   }
 
 }

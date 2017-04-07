@@ -19,21 +19,20 @@ export class BlazerService {
     this.blazers.push(newBlazer);
   }
 
-  getBlazerById(blazerId: string){
-    return this.angularFire.database.object('blazers/', + blazerId);
+  getBlazerById(blazerId: string) {
+    return this.angularFire.database.object('blazers/' + blazerId);
   }
 
-  updateBlazer(localUpdatedBlazer){
-   var blazerEntryInFirebase = this.getBlazerById(localUpdatedBlazer.$key);
-   blazerEntryInFirebase.update({name: localUpdatedBlazer.name,
-                               position: localUpdatedBlazer.position,
-                               height: localUpdatedBlazer.height,
-                               description: localUpdatedBlazer.description});
+  updateBlazer(localUpdatedBlazer) {
+    var blazerEntryInFirebase = this.getBlazerById(localUpdatedBlazer.$key);
+    blazerEntryInFirebase.update({name: localUpdatedBlazer.name,
+                                position: localUpdatedBlazer.position,
+                                height: localUpdatedBlazer.height,
+                                description: localUpdatedBlazer.description});
   }
 
   deleteBlazer(localBlazerToDelete) {
     var blazerEntryInFirebase = this.getBlazerById(localBlazerToDelete.$key);
     blazerEntryInFirebase.remove();
   }
-
 }

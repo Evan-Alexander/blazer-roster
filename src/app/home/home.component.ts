@@ -25,7 +25,8 @@ export class HomeComponent implements OnInit {
   }
 
   goToDetailPage(clickedBlazer) {
-    this.router.navigate(['blazers', clickedBlazer.$key]);
+    this.router.navigate(['blazer', clickedBlazer.$key]);
+    console.log(clickedBlazer);
   }
 
 }
