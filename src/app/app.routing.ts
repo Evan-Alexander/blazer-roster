@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlazerDetailComponent } from './blazer-detail/blazer-detail.component';
+import { ManagerComponent } from './manager/manager.component';
 
 const appRoutes: Routes = [
   {

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Blazer } from './blazer.model';
-import { BLAZERS } from './mock-blazers';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 
@@ -13,7 +12,7 @@ export class BlazerService {
  }
 
   getBlazers() {
-    return this.albums;
+    return this.blazers;
   }
 
   addBlazer(newBlazer: Blazer) {
@@ -21,10 +20,6 @@ export class BlazerService {
   }
 
   getBlazerById(blazerId: string){
-    for (var i = 0; i <= BLAZERS.length - 1; i++) {
-      if (BLAZERS[i].id === blazerId) {
-        return BLAZERS[i];
-      }
-    }
+    return this.angularFire.database.object('blazers/', + blazerId);
   }
 }

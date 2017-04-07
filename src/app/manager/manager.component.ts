@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 import { BlazerService } from '../blazer.service';
+import { Blazer } from '../blazer.model';
 
 @Component({
   selector: 'app-manager',
@@ -16,7 +17,7 @@ export class ManagerComponent implements OnInit {
   }
 
   submitForm(name: string, position: string, height: string, description: string) {
-    var newBlazer: new Blazer(name, position, height, description);
+    var newBlazer: Blazer = new Blazer(name, position, height, description);
     this.blazerService.addBlazer(newBlazer);
   }
 
