@@ -23,7 +23,7 @@
     <input class="form-control" #newDescription>
   </div>
   <br>
-  <button (click)="submitForm(newName.value, newPosition.value, newHeight.value, newDescription.value); newName.value=''; newPosition.value=''; newHeight.value=''; newDescription.value=''">Add</button>
+  <button (click)="submitForm(newName.value, newPosition.value.toLowerCase(), newHeight.value, newDescription.value); newName.value=''; newPosition.value=''; newHeight.value=''; newDescription.value=''">Add</button>
 </div>
 <div>
   <app-home></app-home>

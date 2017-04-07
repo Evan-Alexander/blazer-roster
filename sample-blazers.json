@@ -1,36 +1,36 @@
 { "blazers": [{
     "name": "Damian Lillard",
-    "position": "Point Guard",
+    "position": "point guard",
     "height": "6-3",
     "description": "The leader of the team. Awarded rookie of the year his first season.",
     "id": "1"
     }, {
     "name": "CJ McCollum",
-    "position": "Shooting Guard",
+    "position": "shooting guard",
     "height": "6-4",
     "description": "Came into his own during the 2015-16 season earning him a spot on the starting five.",
     "id": "2"
     }, {
     "name": "Mo Harless",
-    "position": "Small Forward",
+    "position": "small forward",
     "height": "6-9",
     "description": "Awarded most improved player in the NBA is second season.  A shot creator and unbelievable ball handling skills.",
     "id": "3"
     },{
     "name": "Al Farouk Aminu",
-    "position": "Power Forward",
+    "position": "power forward",
     "height": "6-9",
     "description": "Please dont take the ball up court.  Great defense and atheltic abilities.",
     "id": "4"
     },{
     "name": "Jusuf Nurkic",
-    "position": "Center",
+    "position": "center",
     "height": "6-11",
     "description": "His second season in the NBA is looking to have some serious all-star potential.  The Blazers are an entirely different team with him on the court.",
     "id": "5"
     },{
     "name": "Allen Crabbe",
-    "position": "Point Guard",
+    "position": "point guard",
     "height": "6-6",
     "description": "Knocks the light out of three-point shots.  Great sixth-man.",
     "id": "6"

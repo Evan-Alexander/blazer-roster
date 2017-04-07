@@ -17,35 +17,35 @@ export class FilterPipe implements PipeTransform {
       var output: Blazer[] = [];
       if (desiredPosition === "shootingGuard") {
         for(var i = 0; i < input.length; i++) {
-          if (input[i].position === "Shooting Guard") {
+          if (input[i].position === "shooting guard") {
             output.push(input[i]);
           }
         }
         return output;
       } else if (desiredPosition === "pointGuard") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].position === "Point Guard") {
+          if (input[i].position === "point guard") {
             output.push(input[i]);
           }
         }
         return output;
       } else if (desiredPosition === "smallForward") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].position === "Small Forward") {
+          if (input[i].position === "small forward") {
             output.push(input[i]);
           }
         }
         return output;
       } else if (desiredPosition === "powerForward") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].position === "Power Forward") {
+          if (input[i].position === "power forward") {
             output.push(input[i]);
           }
         }
         return output;
       } else if (desiredPosition === "center") {
         for (var i = 0; i < input.length; i++) {
-          if (input[i].position === "Center") {
+          if (input[i].position === "center") {
             output.push(input[i]);
           }
         }
