@@ -1,3 +1,19 @@
-<p>
-  edit-blazer works!
-</p>
+<h4>Edit Player</h4>
+
+<label>New Blazer Name:</label>
+<input [(ngModel)]="selectedBlazer.name">
+<br>
+
+<label>New Blazer Position:</label>
+<input [(ngModel)]="selectedBlazer.position">
+<br>
+
+<label>New Blazer Height:</label>
+<input [(ngModel)]="selectedBlazer.height">
+<br>
+
+<label>New Blazer Description:</label>
+<input [(ngModel)]="selectedBlazer.description">
+<br>
+<br>
+<button (click)="beginUpdatingBlazer(selectedBlazer)">Update</button>

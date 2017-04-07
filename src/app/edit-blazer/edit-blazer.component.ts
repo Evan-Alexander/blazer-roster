@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Blazer } from '../blazer.model'
+import { BlazerService } from '../blazer.service';
 
 @Component({
   selector: 'app-edit-blazer',
   templateUrl: './edit-blazer.component.html',
-  styleUrls: ['./edit-blazer.component.css']
+  styleUrls: ['./edit-blazer.component.css'],
+  providers: [BlazerService]
 })
 export class EditBlazerComponent implements OnInit {
+  @Input() selectedBlazer;
 
-  constructor() { }
+  constructor(private blazerService: BlazerService) { }
 
   ngOnInit() {
+  }
+
+  beginUpdatingBlazer(blazerToUpdate) {
+    this.blazerService.updateBlazer(blazerToUpdate);
   }
 
 }
