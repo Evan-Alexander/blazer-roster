@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2';
 })
 export class BlazerDetailComponent implements OnInit {
   blazerId: string;
-  blazerToDisplay: Blazer;
+  blazerToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +27,7 @@ export class BlazerDetailComponent implements OnInit {
       this.blazerId = urlParameters['id'];
     });
     this.blazerToDisplay = this.blazerService.getBlazerById(this.blazerId);
+    console.log(this.blazerToDisplay);
   }
 
 }
