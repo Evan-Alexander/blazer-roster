@@ -1,23 +1,23 @@
-<h4>Edit Player</h4>
+<h4 id="edit-player">Edit Player</h4>
 
 <label>New Blazer Name:</label>
-<input [(ngModel)]="selectedBlazer.name">
+<input class="form-control" [(ngModel)]="selectedBlazer.name">
 <br>
 
 <label>New Blazer Position:</label>
-<input [(ngModel)]="selectedBlazer.position">
+<input class="form-control" [(ngModel)]="selectedBlazer.position">
 <br>
 
 <label>New Blazer Height:</label>
-<input [(ngModel)]="selectedBlazer.height">
+<input class="form-control" [(ngModel)]="selectedBlazer.height">
 <br>
 
 <label>New Blazer Description:</label>
-<input [(ngModel)]="selectedBlazer.description">
+<input class="form-control" [(ngModel)]="selectedBlazer.description">
 <br>
 
 <br>
-<button (click)="beginUpdatingBlazer(selectedBlazer)">Update</button>
+<button class="btn btn-default" (click)="beginUpdatingBlazer(selectedBlazer)">Update</button>
 <br>
 <br>
-<button (click)="beginDeletingBlazer(selectedBlazer)">Delete</button>
+<button class="btn btn-default" (click)="beginDeletingBlazer(selectedBlazer)">Delete</button>

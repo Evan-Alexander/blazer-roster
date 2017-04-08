@@ -2,6 +2,46 @@
 #search {
   margin-left: 35%;
 }
+body {
+  background-image: url('./assets/court.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5%;
+}
+.container {
+  color: #fff;
+}
+#add-new-form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#new-player-label {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -2%;
+}
+
+#player-name:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 5px red;
+}
+
+div.well input,
+div.well button {
+  color: #000;
+}
+div#detail-well,
+#player-name {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
 
 .footer {
   position: fixed;
