@@ -43,6 +43,15 @@ div#detail-well,
   text-align: center;
 }
 
+div#detail-well {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+#profile-photo {
+  width: 80%;
+}
+
 .footer {
   position: fixed;
   bottom: 0;

@@ -1,3 +1,3 @@
 export class Blazer {
-  constructor (public name: string, public position: string, public height: string, public description: string) { }
+  constructor (public name: string, public position: string, public height: string, public description: string, public photo: string) { }
 }

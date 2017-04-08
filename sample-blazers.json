@@ -3,12 +3,14 @@
     "position": "point guard",
     "height": "6-3",
     "description": "The leader of the team. Awarded rookie of the year his first season.",
+    "photo": "https://s-media-cache-ak0.pinimg.com/originals/75/d3/ca/75d3cac271537685ab822c1aeba50bc3.jpg",
     "id": "1"
     }, {
     "name": "CJ McCollum",
     "position": "shooting guard",
     "height": "6-4",
     "description": "Came into his own during the 2015-16 season earning him a spot on the starting five.",
+    "photo": "https://soloretevlog.files.wordpress.com/2016/04/mccollum.jpg",
     "id": "2"
     }, {
     "name": "Mo Harless",
@@ -17,22 +19,67 @@
     "description": "Awarded most improved player in the NBA is second season.  A shot creator and unbelievable ball handling skills.",
     "id": "3"
     },{
-    "name": "Al Farouk Aminu",
+    "name": "Al Farouq Aminu",
     "position": "power forward",
     "height": "6-9",
     "description": "Please dont take the ball up court.  Great defense and atheltic abilities.",
+    "photo": "http://a.fssta.com/content/dam/fsdigital/fscom/NBA/images/2015/09/30/PortlandTrailBlazers/093015-NBA-Portland-Trail-BlazersMM-PI13.vresize.1200.675.high.32.jpg",
     "id": "4"
     },{
     "name": "Jusuf Nurkic",
     "position": "center",
     "height": "6-11",
     "description": "His second season in the NBA is looking to have some serious all-star potential.  The Blazers are an entirely different team with him on the court.",
+    "photo": "https://cdn0.vox-cdn.com/thumbor/xQRclI5SFEr6wbcp7o-6u_Hpt2g=/0x0:4000x2735/1200x800/cdn0.vox-cdn.com/uploads/chorus_image/image/53957669/usa_today_9978918.0.jpg",
     "id": "5"
     },{
     "name": "Allen Crabbe",
     "position": "point guard",
     "height": "6-6",
-    "description": "Knocks the light out of three-point shots.  Great sixth-man.",
+    "description": "Knocks the light out of three-point shots.  Ideal sixth-man.",
+    "photo": "https://cdn0.vox-cdn.com/thumbor/GqvP021eFYm1GtcpaaxfCywWL74=/0x0:5760x3840/1200x800/cdn0.vox-cdn.com/uploads/chorus_image/image/50075155/usa-today-9195582.0.jpg",
     "id": "6"
+    },{
+    "name": "Evan Turner",
+    "position": "shooting guard",
+    "height": "6-7",
+    "description": "Known for his play making, phenomenal ball handling skills, and killer defense.",
+    "photo": "http://clutchpoints.com/wp-content/uploads/2016/09/evan-turner.jpg",
+    "id": "7"
+    },{
+    "name": "Meyers Leanord",
+    "position": "center",
+    "height": "7-1",
+    "description": "A center than can spread the floor with his shooting ability.  Great on the boards as well.",
+    "photo": "http://blogs.pjstar.com/eye/files/2013/10/mediaday15.jpg",
+    "id": "8"
+    },{
+    "name": "Ed Davis",
+    "position": "center",
+    "height": "6-10",
+    "description": "A strong center, aggressive on the boards, and very much a team player.",
+    "photo": "http://estaticos03.marca.com/albumes/2015/07/17/pasarela_nba_estrenando_uniformes/1437084944_extras_albumes_1_980.jpg",
+    "id": "9"
+    },{
+    "name": "Shabazz Napier",
+    "position": "point guard",
+    "height": "6-1",
+    "description": "Speed, offense, defense, playmaking ... he does it all.",
+    "photo": "http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0930%2Fr133547_1296x729_16-9.jpg",
+    "id": "10"
+    },{
+    "name": "Noah Vonleh",
+    "position": "power forward",
+    "height": "6-10",
+    "description": "Young, powerful, does the dirty work, coming into his own.  A powerful asset to the team.",
+    "photo": "http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0930%2Fr133547_1296x729_16-9.jpg",
+    "id": "11"
+    },{
+    "name": "Jake Layman",
+    "position": "small forward",
+    "height": "6-9",
+    "description": "Just needs more time to mature, the tools are there.  Had a breakout game where he shot 4 threes late in the 4th quarter.  Fans remember, oh, they rememeber.",
+    "photo": "http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0930%2Fr133547_1296x729_16-9.jpg",
+    "id": "12"
   }]
 }

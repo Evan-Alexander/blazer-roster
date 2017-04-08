@@ -16,11 +16,11 @@ export class ManagerComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, position: string, height: string, description: string) {
-    if (!name || !position || !height || !description) {
+  submitForm(name: string, position: string, height: string, description: string, photo: string) {
+    if (!name || !position || !height || !description || !photo) {
       alert("Please fill in all fields and resubmit.");
     } else {
-      var newBlazer: Blazer = new Blazer(name, position, height, description);
+      var newBlazer: Blazer = new Blazer(name, position, height, description, photo);
       this.blazerService.addBlazer(newBlazer);
       alert("Entry Submitted!");
     }

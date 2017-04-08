@@ -28,7 +28,8 @@ export class BlazerService {
     blazerEntryInFirebase.update({name: localUpdatedBlazer.name,
                                 position: localUpdatedBlazer.position,
                                 height: localUpdatedBlazer.height,
-                                description: localUpdatedBlazer.description});
+                                description: localUpdatedBlazer.description,
+                                photo: localUpdatedBlazer.photo});
   }
 
   deleteBlazer(localBlazerToDelete) {

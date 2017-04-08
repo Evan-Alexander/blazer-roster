@@ -19,6 +19,7 @@
       <h3 id="player-name" (click)="goToDetailPage(blazer)">{{blazer?.name}}</h3>
 
     <div *ngIf="currentRoute === '/manager'">
+      <img src="{{blazerToDisplay?.photo}}" id="manager-photo">  
       <h4>{{blazer?.position}}</h4>
       <h4>{{blazer?.heigth}}</h4>
       <h5>{{blazer?.description}}</h5>

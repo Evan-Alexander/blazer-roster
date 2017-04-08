@@ -10,8 +10,6 @@ import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 
 
 export class FilterPipe implements PipeTransform {
-  // Blazer: [];
-
   transform(input: Blazer[], desiredPosition) {
     if (input) {
       var output: Blazer[] = [];
@@ -56,26 +54,3 @@ export class FilterPipe implements PipeTransform {
     }
   }
 }
-      // } else if (desiredPosition === "smallForward") {
-      //   for (var i = 0; i < input.length; i++) {
-      //     if (input[i].position === true) {
-      //       output.push(input[i]);
-      //     }
-      //   }
-      //   return output;
-      // } else if (desiredPosition === "powerForward") {
-      //   for (var i = 0; i < input.length; i++) {
-      //     if (input[i].position === true) {
-      //       output.push(input[i]);
-      //     }
-      //   }
-      //   return output;
-      // } else if (desiredPosition === "center") {
-      //   for (var i = 0; i < input.length; i++) {
-      //     if (input[i].position === true) {
-      //       output.push(input[i]);
-      //     }
-      //   }
-      //   return output;
-      // } else {
-      //   return input;
