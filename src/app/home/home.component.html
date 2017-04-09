@@ -1,17 +1,19 @@
 <hr>
-<h2 id="welcome">Welcome to the Portland TrailBlazers</h2>
+<div id="welcome-group">
+  <h2 id="welcome">Welcome to the Portland TrailBlazers</h2>
 
-<h4 id="search-label">Search by position:</h4>
-<select id="filter" (change)="onChange($event.target.value)">
-  <option value="allBlazers" selected="selected">All Blazers</option>
-  <option value="shootingGuard">Shooting Guard</option>
-  <option value="pointGuard">Point Guard</option>
-  <option value="smallForward">Small Forward</option>
-  <option value="powerForward">Power Forward</option>
-  <option value="center">Center</option>
-</select>
+  <h4 id="search-label">Search by position:</h4>
+  <select id="filter" (change)="onChange($event.target.value)">
+    <option value="allBlazers" selected="selected">All Blazers</option>
+    <option value="shootingGuard">Shooting Guard</option>
+    <option value="pointGuard">Point Guard</option>
+    <option value="smallForward">Small Forward</option>
+    <option value="powerForward">Power Forward</option>
+    <option value="center">Center</option>
+  </select>
 
-<h3 id="click-on-player-label">Click on a player to view their profile.</h3>
+  <h3 id="click-on-player-label">Click on a player to view their profile.</h3>
+</div>
 
 
 <div id="blazer-list-home" *ngFor="let blazer of blazers | filter:positionFilter">
@@ -19,7 +21,7 @@
       <h3 id="player-name" (click)="goToDetailPage(blazer)">{{blazer?.name}}</h3>
 
     <div id="manager-view" *ngIf="currentRoute === '/manager'">
-      <img src="{{blazerToDisplay?.photo}}">
+      <img src="{{blazer?.photo}}">
       <h4>{{blazer?.position}}</h4>
       <h4>{{blazer?.heigth}}</h4>
       <h5>{{blazer?.description}}</h5>

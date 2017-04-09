@@ -5,7 +5,13 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 5%;
+  padding-bottom: 6%;
+  padding-top: 4%;
+}
+
+#logo {
+  max-width: 50px;
+  float:left;
 }
 
 .container {
@@ -26,21 +32,24 @@ HOME PAGE
   transition: all .5s ease;
   font-size: 2em;
 }
-
-#click-on-player-label,
-#search-label,
 #welcome {
+  margin-bottom: 3%;
+}
+
+#welcome-group {
   margin: 0 auto;
   margin-top: 5%;
   text-align: center;
 }
 
 .container #filter {
-  margin-top: 4%;
+  margin-bottom: 3%;
+  margin-top: 1%;
   border: solid 2px red;
-  margin-left: 44.5%;
   color: #000;
+  font-size: 1.2em;
 }
+
 /***********
 DETAIL PAGE
 ************/
@@ -58,6 +67,11 @@ div#detail-well {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   width: 60%;
+  line-height: 1em;
+}
+
+#detail-well h5 {
+  line-height: 1.75em;
 }
 
 #profile-photo {
@@ -78,26 +92,51 @@ ABOUT PAGE
 MANAGEMENT PAGE
 ************/
 
-#add-new-form,
-#manager-home-view {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  /*text-align: center;*/
-}
-
 #new-player-label {
   margin: 0 auto;
   text-align: center;
   margin-bottom: -2%;
 }
 
+#add-new-form,
+#manager-home-view {
+  margin: 0 auto;
+  margin-top: 2%;
+  /*margin-bottom: 2%;*/
+}
+
+#add-new-form label {
+  margin-top: 1.5%;
+}
+
+#edit-label {
+  margin: 0 auto;
+  text-align: center;
+}
 
 
+#manager-view h5,
+#manager-view h4 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#manager-view img {
+  margin: auto;
+  display: block;
+  width: 50%;
+  border: solid 2px red;
+  margin-bottom: 2%;
+}
+
+#manager-view h5 {
+  line-height: 1.75em;
+}
 
 
-
+#manager-view label {
+  text-align: left;
+}
 
 .footer {
   position: fixed;
@@ -107,15 +146,3 @@ MANAGEMENT PAGE
   padding: 15px;
   background-color: #1b1b1b
 }
-
-/*@media screen and (min-width: 480px) and (max-width: 660px){
-  #add-new-form,
-  #edit-player {
-    width: 100%;
-  }
-  .container #filter {
-    margin-left: 3%;
-  }
-
-
-}*/
