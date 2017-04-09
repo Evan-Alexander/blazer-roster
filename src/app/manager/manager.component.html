@@ -17,19 +17,19 @@
     <br>
     <input class="form-control" #newHeight>
   </div>
-  <div>
-    <label>Profile Photo URL:</label>
-    <br>
-    <input class="form-control" #newphoto>
-  </div>
   <br>
   <div>
     <label>Player Description:</label>
     <br>
     <textarea class="form-control" #newDescription></textarea>
   </div>
+  <div>
+    <label>Profile Photo URL:</label>
+    <br>
+    <input class="form-control" #newPhoto>
+  </div>
   <br>
-  <button class="btn btn-default" (click)="submitForm(newName.value, newPosition.value.toLowerCase(), newHeight.value, newPhoto.value, newDescription.value); newName.value=''; newPosition.value=''; newHeight.value=''; newPhoto.value=''; newDescription.value=''">Add</button>
+  <button class="btn btn-default" (click)="submitForm(newName.value, newPosition.value.toLowerCase(), newHeight.value, newDescription.value, newPhoto.value); newName.value=''; newPosition.value=''; newHeight.value=''; newDescription.value=''; newPhoto.value=''">Add</button>
 </div>
 <div id="manager-home-view">
   <app-home></app-home>
