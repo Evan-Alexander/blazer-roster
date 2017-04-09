@@ -5,7 +5,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 6%;
+  padding-bottom: 12%;
   padding-top: 10%;
 }
 
@@ -85,6 +85,10 @@ ABOUT PAGE
 #about-p {
   font-size: 1.2em;
   margin: 3.5% 7%;
+}
+
+.about {
+  margin-left: 10%;
 }
 
 
