@@ -1,27 +1,30 @@
-<h4 id="edit-player">Edit Player</h4>
 
-<label>New Blazer Name:</label>
-<input class="form-control" [(ngModel)]="selectedBlazer.name">
-<br>
+<div id="edit-player" class="form-group">
+  <h4 >Edit Player</h4>
 
-<label>New Blazer Position:</label>
-<input class="form-control" [(ngModel)]="selectedBlazer.position">
-<br>
+  <label>New Blazer Name:</label>
+  <input class="form-control" [(ngModel)]="selectedBlazer.name">
+  <br>
 
-<label>New Blazer Height:</label>
-<input class="form-control" [(ngModel)]="selectedBlazer.height">
-<br>
+  <label>New Blazer Position:</label>
+  <input class="form-control" [(ngModel)]="selectedBlazer.position">
+  <br>
 
-<label>New Blazer Description:</label>
-<textarea class="form-control" [(ngModel)]="selectedBlazer.description"></textarea>
-<br>
+  <label>New Blazer Height:</label>
+  <input class="form-control" [(ngModel)]="selectedBlazer.height">
+  <br>
 
-<label>New Photo:</label>
-<input class="form-control" [(ngModel)]="selectedBlazer.photo">
-<br>
+  <label>New Blazer Description:</label>
+  <textarea class="form-control" [(ngModel)]="selectedBlazer.description"></textarea>
+  <br>
 
-<br>
-<button class="btn btn-default" (click)="beginUpdatingBlazer(selectedBlazer)">Update</button>
-<br>
-<br>
-<button class="btn btn-default" (click)="beginDeletingBlazer(selectedBlazer)">Delete</button>
+  <label>New Photo:</label>
+  <input class="form-control" [(ngModel)]="selectedBlazer.photo">
+  <br>
+
+  <br>
+  <button class="btn btn-default" (click)="beginUpdatingBlazer(selectedBlazer)">Update</button>
+  <br>
+  <br>
+  <button class="btn btn-default" (click)="beginDeletingBlazer(selectedBlazer)">Delete</button>
+</div>

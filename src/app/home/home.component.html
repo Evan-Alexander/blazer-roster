@@ -1,6 +1,7 @@
+<hr>
 <h2 id="welcome">Welcome to the Portland TrailBlazers</h2>
 
-<h5 id="search-label">Search by position:</h5>
+<h4 id="search-label">Search by position:</h4>
 <select id="filter" (change)="onChange($event.target.value)">
   <option value="allBlazers" selected="selected">All Blazers</option>
   <option value="shootingGuard">Shooting Guard</option>
@@ -8,7 +9,6 @@
   <option value="smallForward">Small Forward</option>
   <option value="powerForward">Power Forward</option>
   <option value="center">Center</option>
-
 </select>
 
 <h3 id="click-on-player-label">Click on a player to view their profile.</h3>
@@ -18,8 +18,8 @@
 
       <h3 id="player-name" (click)="goToDetailPage(blazer)">{{blazer?.name}}</h3>
 
-    <div *ngIf="currentRoute === '/manager'">
-      <img src="{{blazerToDisplay?.photo}}" id="manager-photo">  
+    <div id="manager-view" *ngIf="currentRoute === '/manager'">
+      <img src="{{blazerToDisplay?.photo}}">
       <h4>{{blazer?.position}}</h4>
       <h4>{{blazer?.heigth}}</h4>
       <h5>{{blazer?.description}}</h5>

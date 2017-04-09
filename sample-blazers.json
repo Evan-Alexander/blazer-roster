@@ -13,10 +13,11 @@
     "photo": "https://soloretevlog.files.wordpress.com/2016/04/mccollum.jpg",
     "id": "2"
     }, {
-    "name": "Mo Harless",
+    "name": "Maurice Harkless",
     "position": "small forward",
     "height": "6-9",
     "description": "Awarded most improved player in the NBA is second season.  A shot creator and unbelievable ball handling skills.",
+    "photo": "http://i.cdn.turner.com/drp/nba/blazers/sites/default/files/gettyimages-491479520_master_0.jpg",
     "id": "3"
     },{
     "name": "Al Farouq Aminu",
@@ -30,14 +31,14 @@
     "position": "center",
     "height": "6-11",
     "description": "His second season in the NBA is looking to have some serious all-star potential.  The Blazers are an entirely different team with him on the court.",
-    "photo": "https://cdn0.vox-cdn.com/thumbor/xQRclI5SFEr6wbcp7o-6u_Hpt2g=/0x0:4000x2735/1200x800/cdn0.vox-cdn.com/uploads/chorus_image/image/53957669/usa_today_9978918.0.jpg",
+    "photo": "http://a.espncdn.com/media/motion/2017/0329/dm_170329_nba_nuggets_blazers_hl/dm_170329_nba_nuggets_blazers_hl.jpg",
     "id": "5"
     },{
     "name": "Allen Crabbe",
     "position": "point guard",
     "height": "6-6",
     "description": "Knocks the light out of three-point shots.  Ideal sixth-man.",
-    "photo": "https://cdn0.vox-cdn.com/thumbor/GqvP021eFYm1GtcpaaxfCywWL74=/0x0:5760x3840/1200x800/cdn0.vox-cdn.com/uploads/chorus_image/image/50075155/usa-today-9195582.0.jpg",
+    "photo": "http://www.columbian.com/wp-content/uploads/2015/11/1116_SPT_Crabbe.jpg",
     "id": "6"
     },{
     "name": "Evan Turner",
@@ -72,14 +73,14 @@
     "position": "power forward",
     "height": "6-10",
     "description": "Young, powerful, does the dirty work, coming into his own.  A powerful asset to the team.",
-    "photo": "http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0930%2Fr133547_1296x729_16-9.jpg",
+    "photo": "http://www.columbian.com/wp-content/uploads/2015/10/Blazers-Noah-Vonleh-2015-1.jpg",
     "id": "11"
     },{
     "name": "Jake Layman",
     "position": "small forward",
     "height": "6-9",
     "description": "Just needs more time to mature, the tools are there.  Had a breakout game where he shot 4 threes late in the 4th quarter.  Fans remember, oh, they rememeber.",
-    "photo": "http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0930%2Fr133547_1296x729_16-9.jpg",
+    "photo": "http://www.trbimg.com/img-5819d3cb/turbine/bal-former-maryland-star-jake-layman-makes-historic-nba-debut-20161102",
     "id": "12"
   }]
 }
