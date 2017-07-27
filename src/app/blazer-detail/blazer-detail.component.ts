@@ -3,8 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Blazer } from '../blazer.model';
 import { BlazerService } from '../blazer.service';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
-import { FirebaseObjectObservable } from 'angularfire2';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-blazer-detail',

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Blazer } from '../blazer.model';
 import { Router } from '@angular/router';
 import { BlazerService } from '../blazer.service';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { FirebaseListObservable } from 'angularfire2/database';
 import {Pipe, PipeTransform} from '@angular/core';
 
 @Component({

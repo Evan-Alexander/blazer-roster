@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Blazer } from './blazer.model';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 
 @Injectable()
 export class BlazerService {
   blazers: FirebaseListObservable<any[]>;
 
-  constructor(private angularFire: AngularFire) {
-    this.blazers = angularFire.database.list('blazers');
+  constructor(private db: AngularFireDatabase) {
+    this.blazers = db.list('blazers');
   }
 
   getBlazers() {
@@ -20,7 +20,7 @@ export class BlazerService {
   }
 
   getBlazerById(blazerId: string) {
-    return this.angularFire.database.object('blazers/' + blazerId);
+    return this.db.object('blazers/' + blazerId);
   }
 
   updateBlazer(localUpdatedBlazer) {

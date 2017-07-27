@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 import { BlazerService } from '../blazer.service';
 import { Blazer } from '../blazer.model';
 
