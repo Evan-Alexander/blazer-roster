@@ -1,9 +1,8 @@
 <hr>
 <div id="welcome-group">
   <h2 id="welcome">Welcome to the Portland TrailBlazers</h2>
-
   <h4 id="search-label">Search by position:</h4>
-  <select id="filter" (change)="onChange($event.target.value)">
+  <select class="selectpicker" id="filter" (change)="onChange($event.target.value)">
     <option value="allBlazers" selected="selected">All Blazers</option>
     <option value="shootingGuard">Shooting Guard</option>
     <option value="pointGuard">Point Guard</option>

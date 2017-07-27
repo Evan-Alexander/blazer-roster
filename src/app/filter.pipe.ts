@@ -1,7 +1,6 @@
 import {Pipe, PipeTransform} from '@angular/core';
 import { Blazer } from './blazer.model';
 import { BlazerService } from './blazer.service';
-// import { FirebaseObjectObservable } from 'angularfire2';
 
 @Pipe({
   name: 'filter',
