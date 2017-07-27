@@ -11,6 +11,12 @@ export class AppComponent {
     let bool = this.isIn;
     this.isIn = bool === false ? true : false;
   }
-  
+  getBodyMargin() {
+    if (this.isIn === true) {
+      return '22%';
+    } else {
+      return '';
+    }
+  }
   title = 'Blazer Roster';
 }

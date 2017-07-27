@@ -22,7 +22,7 @@
     </div>
 </nav>
 
-<div class="container">
+<div [style.margin-top]='getBodyMargin()' class="container">
   <h2 id="title">{{title}}</h2>
   <router-outlet></router-outlet>
 </div>
