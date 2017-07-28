@@ -44,6 +44,7 @@ Thumbs.db
 
 #Firebase credentials
 /src/app/api-keys.ts
+/src/app/api_keys.ts
 
 Lillard
 https://s-media-cache-ak0.pinimg.com/originals/75/d3/ca/75d3cac271537685ab822c1aeba50bc3.jpg

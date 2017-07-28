@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { BlazerService } from './blazer.service';
-import { masterFirebaseConfig } from './api-keys';
+import { masterFirebaseConfig } from './api_keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 

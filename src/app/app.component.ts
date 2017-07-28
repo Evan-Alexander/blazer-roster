@@ -13,7 +13,7 @@ export class AppComponent {
   }
   getBodyMargin() {
     if (this.isIn === true) {
-      return '22%';
+      return '26.5%';
     } else {
       return '';
     }
